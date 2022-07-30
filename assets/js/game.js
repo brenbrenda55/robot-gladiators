@@ -35,9 +35,9 @@ var fight = function(enemy) {
     var damage = randomNumber(playerInfo.attack - 3, playerInfo.attack);
 
     // remove enemy's health by subtracting the amount set in the playerAttack variable
-    enemy.health = Math.max(0, enemyHealth - damage);
+    enemy.health = Math.max(0, enemy.health - damage);
     console.log(
-      playerInfo.name + " attacked " + enemy.name + ". " + enemyName + " now has " + enemyHealth + " health remaining."
+      playerInfo.name + " attacked " + enemy.name + ". " + enemy.name + " now has " + enemy.health + " health remaining."
     );
 
     // check enemy's health

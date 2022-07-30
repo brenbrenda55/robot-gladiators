@@ -163,6 +163,7 @@ if (playAgainConfirm) {
 
 // go to shop between battles function
 var shop = function() {
+  console.log("entered the shop");
 // ask player what they'd like to do
 var shopOptionPrompt = window.prompt(
   'Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Please enter one "REFILL", "UPGRADE", or "LEAVE" to make a choice.'
